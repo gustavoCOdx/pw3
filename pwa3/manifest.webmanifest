@@ -34,7 +34,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "http://gustavoCOdx.github.io/pw3/index.html",
+    "start_url": "https://gustavocodx.github.io/pw3/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#199332"
