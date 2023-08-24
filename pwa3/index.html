@@ -1,0 +1,96 @@
+<hmtl lang="en">
+
+    <head>
+        <link rel="manifest" href="/manifest.webmanifest">
+        <meta charset="UTF-8" />
+        <meta content='yes' name='apple-mobile-web-app-capable' />
+        <meta content='yes' name='mobile-web-app-capable' />
+        <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+        <meta name="theme-color" content="black">
+        <link rel="apple-touch-icon" href="assets/logos/icon-192x192-apple.png">
+        <meta name="description" content="width=device-width, inital-scaled=1">
+        <title>Site e Aplicativo pwa</title>
+       
+
+    </head>
+
+    <body>
+        <header><img src="img/foto.jpg" height="300px" class="img">
+            <h1>Este é o site PWA Gustavo Henrique Barreto Quidiuqimo Pinto</h1>
+        </header>
+
+        <section class="informacoes-pessoais">
+            <h1>Informações Pessoais</h1>
+            <ul>
+              <li>Nome: Gustavo Henrique Barreto </li>
+              <li>Idade: 17 </li>
+              <li>Localização: CEP➤13453-768</li>
+              <li>E-mail: gustavohenriquebq2006@gmail.com </li>
+              <li>Telefone:(+55)19-99384-3466</li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>Descrição sobre o Gustavo</h1>
+           <ul>
+            <li>Sou uma pessoa realista</li>
+            <li>"confiavel"</li>
+            <li>com muitas superações e desafios pasados durante a vida</li>
+           </ul>
+          </section>
+
+          <section>
+            <h1>Meus interesses/Hobbies</h1>
+            <ul>
+                <li>Jogar video game / fazer receitas</li>
+                <li>pescar</li>
+                <li>pretendo fazer uma faculdade para me profiçionalizar ainda mais meus principais objetivos</li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>realizações</h1>
+            <ul>
+                <li><em>curso de windows</em></li>
+                <li><strong>curso de corel-draw</strong></li>
+                <li><em>curso de php</em></li>
+            </ul>
+          </section>
+
+           
+        <div>
+            <a href="pagina2.html"><h2>Ir para a pagina 2</h2></a>
+        </div>
+    </body>
+    
+   
+    <script>
+
+    
+        document.addEventListener("DOMContentLoaded", function (event) {
+                if ('serviceWorker' in navigator) {
+                    console.log('has serviceworker');
+                    window.addEventListener('load', () => {
+                        navigator.serviceWorker.register('serviceWorker.js')
+                            .then((registration) => {
+                                console.log('Service worker registered.', registration);
+                            });
+                    });
+                }
+                else {
+                    console.log("Your browser not supports serviceWorkers");
+                }
+            });
+        
+        </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<br>
+<br>
+
+        <footer class="footer" style="display: flex; align-items: center;"><h1><strong>Este é o footer do meu site PWA</strong></h1></footer>
+        <link rel="stylesheet" href="style.css">
+</hmtl>
